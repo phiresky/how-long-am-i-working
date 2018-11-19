@@ -1,0 +1,4 @@
+.cache
+*.json
+dist
+node_modules
