@@ -6,7 +6,8 @@ import Marker from "pigeon-marker"
 import Overlay from "pigeon-overlay"
 import { observable, computed } from "mobx"
 import { MyStorage } from "./Storage"
-import geolib, { PositionAsDecimal, PositionAsSexadecimal } from "geolib"
+import { PositionAsDecimal, PositionAsSexadecimal } from "geolib"
+import * as geolib from "geolib"
 import { groupBy } from "./util"
 import {
 	BarChart,
@@ -82,8 +83,8 @@ class UI extends React.Component {
 	}
 	async loadCached() {
 		try {
-			const x = await cache.get<LocationHistory>("hist")
-			this.setHistory(x)
+			const x = await cache.get<LocationHistory | undefined>("hist")
+			if(x) this.setHistory(x)
 		} catch (e) {
 			console.error("could not load cached", e)
 		}

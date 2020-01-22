@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/recharts": "^1.8.5",
     "date-fns": "^2.9.0",
     "geolib": "^3.2.1",
     "mobx": "^5.15.2",
