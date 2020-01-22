@@ -1,4 +1,5 @@
 .cache
 *.json
+!package.json
 dist
 node_modules

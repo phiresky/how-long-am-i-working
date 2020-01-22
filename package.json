@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "date-fns": "^2.9.0",
+    "geolib": "^3.2.1",
+    "mobx": "^5.15.2",
+    "mobx-react": "^6.1.4",
+    "parcel": "^1.12.4",
+    "pigeon-maps": "*",
+    "pigeon-marker": "^0.3.4",
+    "prop-types": "*",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "recharts": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "typescript": "^3.7.5"
+  }
+}
